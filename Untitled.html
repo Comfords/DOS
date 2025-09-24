@@ -1,0 +1,23 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-DOS Local</title>
+        <!-- Link to local js-dos CSS -->
+        <link rel="stylesheet" href="./js-dos/js-dos.css">
+    </head>
+    <body>
+        <h1>My Local DOS Game</h1>
+        <div id="jsdos-container"></div>
+
+        <!-- Link to local js-dos JavaScript -->
+        <script src="./js-dos/js-dos.js"></script>
+        <script>
+            // Your js-dos initialization code
+            window.onload = function() {
+                Dos(document.getElementById("jsdos-container")).run("./bundle.jsdos");
+            };
+        </script>
+    </body>
+    </html>
